@@ -29,11 +29,11 @@
 
 ?>
 
-<form name="registration" action="users.aspx" method="post">
+<form name="registration" action="info.php" method="post">
 Name: <input name="name" size="10"><br>
 Birthday(ex:2000/02/12): <input type="text" name="birthday" size="10" maxlength=10><br>
 Email: <input type="text" name="email" size="30"><br>
-Phone Number: <input type="text" name="password" size="10" maxlength=10><br>
+Phone Number: <input type="text" name="phone" size="10" maxlength=10><br>
 Gender: <input type="radio" name="sex" value="male">Male
         <input type="radio" name="sex" value="female">Female
         <input type="radio" name="sex" value="unknown">Unknown<br><br>
@@ -42,7 +42,7 @@ T-shirt color: <input type="radio" name="color" value="white">White
                <input type="radio" name="color" value="black">Black<br>
 
 T-shirt size:
-<select name="os" size="1">
+<select name="size" size="1">
 <option value="XS">XS
 <option value="S">S
 <option value="M">M

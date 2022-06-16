@@ -8,6 +8,9 @@ if(isset($_SESSION['login'])){
     echo "非法登陸系統";
     exit();
   }
+}else{
+  echo "非法登錄系統";
+  exit();
 }
 ?>
 <!DOCTYPE HTML>
@@ -38,10 +41,6 @@ if(isset($_SESSION['login'])){
   <tr>
     <th>Phone Number:</th>
     <th><input type="text" name="phone" size="10" maxlength=10></th>
-  </tr>
-  <tr>
-    <th>Role:</th>
-    <th>user<input type="radio" name="role" value="user">admin<input type="radio" name="role" value="admin"></th>
   </tr>
   <Br>
   <input type="submit" name="submit" value="SUBMIT"><Br>
